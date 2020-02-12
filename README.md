@@ -17,9 +17,10 @@ Try salting or broadcasting to improve join performance
 2. What were the 2-3 most efficient SparkSession property key/value pairs? Through testing multiple variations on values, how can you tell these were the most optimal?
 
 Some of the useful configuration properties are :
-Spark.executor.memory
-Spark.driver.memory
-Spark.sql.shuffle.partitions
+
+Spark.executor.memory , 
+Spark.driver.memory , 
+Spark.sql.shuffle.partitions , 
 Spark.default.parallelism
 
 During job submission if the failure happens due to memory issue, you can look at modifying the first 2 properties. Be careful about the size of the final output which is returned to the driver.
